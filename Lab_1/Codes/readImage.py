@@ -1,14 +1,12 @@
-from google.colab import drive
 from PIL import Image
-from IPython.display import display
-drive.mount("/content/drive", force_remount=True)
+import matplotlib.pyplot as plt
 
-# Navigate to your image
-img_path = '/content/drive/MyDrive/FruitBasket.PNG'
-
-# Read the image
-img = Image.open(img_path)
+# Provide the correct path to your image
+image_path = 'FruitBasket.jpg'  # Adjust this if the file is in a different directory
+image = Image.open(image_path)
 
 # Display the image
-display(img)
+plt.imshow(image)
+plt.axis('off')  # Hide axes
+plt.show()
 
