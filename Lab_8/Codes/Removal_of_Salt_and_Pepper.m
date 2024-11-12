@@ -2,7 +2,7 @@
 img = imread('image.jpg'); % Replace with your image file
 
 % Add Salt and Pepper Noise
-noisy_img = imnoise(img, 'salt & pepper', 0.10); % Add salt & pepper noise with noise density 0.05
+noisy_img = imnoise(img, 'salt & pepper', 0.10); % Add salt & pepper noise with noise density 0.10
 
 % Check if the image is grayscale or color
 if size(noisy_img, 3) == 3
